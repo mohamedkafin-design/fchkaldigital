@@ -1,0 +1,13 @@
+{
+  "name": "fchkal-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "qa": "node scripts/qa.mjs",
+    "images": "node scripts/images.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
+  }
+}

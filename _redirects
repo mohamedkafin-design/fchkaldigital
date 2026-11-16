@@ -1,0 +1,6 @@
+/game/:slug /games/:slug/index.html 200
+/game/:slug/ /games/:slug/index.html 200
+/games/:slug /game/:slug 301!
+/games/:slug/ /game/:slug 301!
+/games /#catalog 301!
+/games/ /#catalog 301!

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /archive/
+Sitemap: https://fchkalstorex.netlify.app/sitemap.xml

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09080e">
+  <meta name="description" content="Shop PS4 and PS5 games at FCHKAL DIGITAL. Browse the collection and order directly on WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FCHKAL DIGITAL — PlayStation Games">
+  <meta property="og:description" content="A curated collection of PS4 and PS5 games. Browse prices and order directly on WhatsApp.">
+  <meta property="og:image" content="https://fchkalstorex.netlify.app/images/brand/fchkal-store-logo.png">
+  <meta property="og:url" content="https://fchkalstorex.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>FCHKAL DIGITAL — PlayStation Games</title>
+  <link rel="icon" type="image/png" href="images/brand/fchkal-store-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="data/store-config.js"></script>
+  <script defer src="data/games.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body data-base-path="./">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="announcement" id="announcementBar" role="status" hidden>
+    <span class="live-dot" aria-hidden="true"></span>
+    <span id="announcementText" data-i18n="eventAnnouncement">GTA VI arrives November 19 — PS5</span>
+    <button class="text-button" type="button" data-open-story="gta" data-i18n="countdownLink">Countdown</button>
+  </div>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="#home" aria-label="FCHKAL DIGITAL home" data-i18n-aria-label="gameHome">
+      <img src="images/brand/fchkal-store-logo.png" alt="" width="44" height="44">
+      <span>FCHKAL <b>DIGITAL</b></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="navGames">
+      <a href="#catalog" data-i18n="navGames">Games</a>
+      <a href="#gta-zone" data-i18n="navGta">GTA VI</a>
+      <a href="#trade-in" data-i18n="tradeNav">Trade</a>
+      <a href="#plus" data-i18n="plusTitle">PlayStation Plus</a>
+      <a href="#tab-reviews" data-i18n="navReviews">Reviews</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" type="button" id="focusSearch" aria-label="Search games" data-i18n-aria-label="searchLabel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+      <label class="sr-only" for="languageSelector" data-i18n="language">Language</label>
+      <select id="languageSelector" class="language-select" aria-label="Language" data-i18n-aria-label="language">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="es">ES</option>
+        <option value="ar">عربي</option>
+      </select>
+      <a class="header-whatsapp" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="orderWhatsApp">Order on WhatsApp</a>
+      <button class="cart-trigger" id="cartButton" type="button" aria-label="Open shopping cart" data-i18n-aria-label="cartTitle">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="content-shell">
+      <section class="store-hero" id="home" aria-labelledby="heroTitle">
+        <img class="store-hero-art" id="storeHeroArt" src="images/gta6/hero.jpg" data-image-fallback="images/gta6/hero.jpg" alt="" width="1280" height="720" fetchpriority="high">
+        <div class="store-hero-shade"></div>
+        <div class="store-hero-copy">
+          <p class="section-overline" data-i18n="heroEyebrow">FCHKAL DIGITAL · PLAYSTATION STORE</p>
+          <h1 id="heroTitle" data-i18n="heroTitle">Level up your collection.</h1>
+          <p class="hero-description" data-i18n="heroText">Discover your next favorite game for PlayStation 4 and PlayStation 5.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalog" data-i18n="shopGames">Shop games</a>
+            <a class="button button-glass" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="orderWhatsApp">Order on WhatsApp</a>
+          </div>
+        </div>
+        <span class="hero-index" aria-hidden="true">F / DIGITAL</span>
+      </section>
+
+      <section class="trust-strip" aria-label="Store information">
+        <div><span class="trust-mark">01</span><span data-i18n="trustPlatforms">PS4 and PS5 games</span></div>
+        <div><span class="trust-mark">02</span><span data-i18n="trustOrdering">Order directly on WhatsApp</span></div>
+        <div><span class="trust-mark">03</span><span id="shopHours">11:00–00:00</span></div>
+      </section>
+
+      <section class="event-hero" id="gtaEvent" aria-labelledby="eventTitle" hidden>
+        <img class="event-art" id="eventArt" src="images/Grand Theft Auto VI (GTA 6).jpg" data-image-fallback="images/Grand Theft Auto VI (GTA 6).jpg" alt="" width="736" height="920" loading="lazy">
+        <div class="event-shade"></div>
+        <div class="event-copy hud-corners">
+          <p class="event-kicker" data-i18n="eventKicker">THE NEXT CHAPTER</p>
+          <h2 id="eventTitle">GTA VI</h2>
+          <p class="event-date" data-i18n="eventDate">19 NOVEMBER 2026 — PS5</p>
+          <div class="countdown" id="countdown" aria-label="Countdown to release" data-i18n-aria-label="countdownLink">
+            <div><b id="countDays">--</b><span data-i18n="days">Days</span></div>
+            <div><b id="countHours">--</b><span data-i18n="hours">Hours</span></div>
+            <div><b id="countMinutes">--</b><span data-i18n="minutes">Minutes</span></div>
+            <div><b id="countSeconds">--</b><span data-i18n="seconds">Seconds</span></div>
+          </div>
+          <a class="button button-primary event-order" id="gtaOrderLink" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="reserveGta">Reserve your copy on WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalogTitle">
+        <div class="section-heading catalog-heading">
+          <div><p class="section-overline" data-i18n="catalogEyebrow">THE COLLECTION</p><h2 id="catalogTitle" data-i18n="catalogTitle">PlayStation games</h2></div>
+          <span class="catalog-count" id="catalogCount"></span>
+        </div>
+        <div class="platform-selector">
+          <div class="selector-copy">
+            <span class="selector-label" data-i18n="choosePlatform">Choose your console</span>
+            <p class="selector-note" data-i18n="comparePlatforms">Switch platforms to compare available games and listed prices.</p>
+          </div>
+          <div class="filter-group" role="group" aria-label="Filter by platform" data-i18n-aria-label="platform">
+            <button type="button" class="filter-chip" data-filter-platform="PS5" data-i18n="platformPS5">PlayStation 5</button>
+            <button type="button" class="filter-chip" data-filter-platform="PS4" data-i18n="platformPS4">PlayStation 4</button>
+          </div>
+        </div>
+        <div class="catalog-tools">
+          <label class="search-field">
+            <span class="sr-only" data-i18n="searchLabel">Search games</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            <input id="searchInput" type="search" placeholder="Search games" autocomplete="off">
+          </label>
+          <label class="sort-field"><span class="sr-only" data-i18n="sortLabel">Sort games</span>
+            <select id="sortFilter">
+              <option value="new" data-i18n="sortNew">New</option>
+              <option value="price-asc" data-i18n="sortPriceAsc">Price: low to high</option>
+              <option value="price-desc" data-i18n="sortPriceDesc">Price: high to low</option>
+              <option value="gta-first" data-i18n="sortGta">GTA VI first</option>
+            </select>
+          </label>
+        </div>
+        <div class="product-grid" id="gamesGrid" aria-live="polite"></div>
+
+        <section class="catalog-subsection" id="plus" aria-labelledby="plusTitle">
+          <div class="section-heading"><div><p class="section-overline" data-i18n="plusEyebrow">MEMBERSHIP</p><h2 id="plusTitle" data-i18n="plusTitle">PlayStation Plus</h2></div></div>
+          <div class="product-grid product-grid-compact" id="plusGrid"></div>
+        </section>
+      </section>
+
+      <section class="gta-zone" id="gta-zone" aria-labelledby="gtaZoneTitle">
+        <div class="section-heading">
+          <div><p class="section-overline" data-i18n="zoneEyebrow">THE COUNTDOWN STARTS HERE</p><h2 id="gtaZoneTitle" data-i18n="zoneTitle">GTA VI ZONE</h2></div>
+          <button class="text-button" type="button" data-open-story="gta" data-i18n="openCountdown">Open countdown</button>
+        </div>
+        <div class="gta-zone-grid" id="gtaZoneGrid"></div>
+      </section>
+
+      <section class="trade-in-section" id="trade-in" aria-labelledby="tradeInTitle">
+        <div class="trade-in-copy">
+          <p class="section-overline" data-i18n="tradeEyebrow">TRADE IN / EXCHANGE</p>
+          <h2 id="tradeInTitle" data-i18n="tradeTitle">Trade a game you own</h2>
+          <p class="trade-in-intro" data-i18n="tradeIntro">Tell us which PlayStation game you have and what you are looking for. We will confirm possible exchange options and details on WhatsApp.</p>
+          <ol class="trade-in-steps">
+            <li><span>01</span><p data-i18n="tradeStepOne">Tell us the game and platform you have.</p></li>
+            <li><span>02</span><p data-i18n="tradeStepTwo">Share the game you would like, if you have one in mind.</p></li>
+            <li><span>03</span><p data-i18n="tradeStepThree">We will confirm possible options and discuss terms with you.</p></li>
+          </ol>
+          <p class="trade-in-note" id="tradeInNote" data-i18n="tradeNote">No exchange values or conditions are published here; ask us to confirm the options for your games.</p>
+        </div>
+        <form class="trade-in-form" id="tradeInForm">
+          <div class="trade-field">
+            <label for="tradeGameName" data-i18n="tradeGameLabel">Game you have</label>
+            <input id="tradeGameName" name="tradeGame" type="text" maxlength="100" autocomplete="off" required>
+          </div>
+          <div class="trade-field">
+            <label for="tradePlatform" data-i18n="tradePlatformLabel">Platform of your game</label>
+            <select id="tradePlatform" name="tradePlatform" required>
+              <option value="PS4" data-i18n="platformPS4">PlayStation 4</option>
+              <option value="PS5" data-i18n="platformPS5">PlayStation 5</option>
+            </select>
+          </div>
+          <div class="trade-field">
+            <label for="tradeWantedGame"><span data-i18n="tradeWantedLabel">Game you want</span> <small data-i18n="tradeOptional">Optional</small></label>
+            <input id="tradeWantedGame" name="wantedGame" type="text" maxlength="100" autocomplete="off">
+          </div>
+          <div class="trade-field">
+            <label for="tradeWantedPlatform"><span data-i18n="tradeWantedPlatformLabel">Platform you want</span> <small data-i18n="tradeOptional">Optional</small></label>
+            <select id="tradeWantedPlatform" name="wantedPlatform">
+              <option value="" data-i18n="tradeNotSpecified">Not specified</option>
+              <option value="PS4" data-i18n="platformPS4">PlayStation 4</option>
+              <option value="PS5" data-i18n="platformPS5">PlayStation 5</option>
+            </select>
+          </div>
+          <button class="button button-primary trade-in-submit" type="submit" data-i18n="tradeSubmit">Ask about an exchange on WhatsApp</button>
+        </form>
+      </section>
+
+      <section class="gift-zone" id="gift-cards">
+        <div><p class="section-overline" data-i18n="giftEyebrow">TOP UP YOUR PLAY</p><h2 data-i18n="giftTitle">PSN gift cards</h2><p data-i18n="giftText">Choose PS4 or PS5 and ask us about available values.</p></div>
+        <div class="gift-card-slot" id="giftCardSlot"></div>
+      </section>
+
+      <section class="store-section" id="offers" aria-labelledby="offersTitle">
+        <div class="section-heading"><div><p class="section-overline" data-i18n="offersEyebrow">NO MADE-UP DISCOUNTS</p><h2 id="offersTitle" data-i18n="offersTitle">Offers</h2></div></div>
+        <div class="empty-panel" id="offersEmpty"><p data-i18n="offersEmpty">There are no advertised discounts right now. Ask us on WhatsApp about current prices.</p><a class="button button-primary" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="askWhatsApp">Ask on WhatsApp</a></div>
+        <div class="product-grid" id="offersGrid"></div>
+      </section>
+
+      <section class="store-section reviews-panel" id="tab-reviews" aria-labelledby="reviewsTitle">
+        <div class="section-heading"><div><p class="section-overline" data-i18n="reviewsEyebrow">REAL CUSTOMER MOMENTS</p><h2 id="reviewsTitle" data-i18n="reviewsTitle">Customer reviews</h2></div><span class="review-count" id="reviewCount" hidden></span></div>
+        <div class="review-stories" id="reviewStories" aria-label="Customer review stories" data-i18n-aria-label="reviewsTitle"></div>
+        <div class="review-gallery" id="reviewGallery"></div>
+        <div class="empty-panel review-empty" id="reviewsEmpty"><p data-i18n="reviewsEmpty">Customer photos will appear here when customers choose to share them.</p><a class="button button-primary" id="reviewWhatsApp" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="reviewCta">Bought from us? Send your photo on WhatsApp</a></div>
+      </section>
+
+      <section class="store-section info-panel" id="tab-info" aria-labelledby="infoTitle">
+        <div class="section-heading"><div><p class="section-overline" data-i18n="infoEyebrow">HERE TO HELP</p><h2 id="infoTitle" data-i18n="infoTitle">Store information</h2></div></div>
+        <div class="info-grid">
+          <article class="info-card"><p class="section-overline" data-i18n="hoursLabel">OPEN DAILY</p><h3 id="infoHours">11:00–00:00</h3><p data-i18n="hoursNote">Message us on WhatsApp during store hours.</p></article>
+          <article class="info-card"><p class="section-overline" data-i18n="paymentLabel">PAYMENT METHODS</p><h3 data-i18n="paymentTitle">Choose your method</h3><div class="payment-list" id="paymentMethods"></div></article>
+          <article class="info-card"><p class="section-overline" data-i18n="orderingLabel">ORDERING</p><h3 data-i18n="orderingTitle">Three simple steps</h3><ol class="order-steps"><li data-i18n="stepOne">Choose a game and platform.</li><li data-i18n="stepTwo">Send your order on WhatsApp.</li><li data-i18n="stepThree">Confirm availability, price, and payment with us.</li></ol></article>
+          <article class="info-card"><p class="section-overline" data-i18n="faqLabel">FAQ</p><h3 data-i18n="faqTitle">Before you order</h3><details><summary data-i18n="faqQuestion">How do I confirm my order?</summary><p data-i18n="faqAnswer">WhatsApp us with your chosen game and platform. We will confirm the current price and availability before payment.</p></details><details><summary data-i18n="faqQuestionTwo">What if a price is not listed?</summary><p data-i18n="faqAnswerTwo">Use “Ask on WhatsApp” to request the current price. We do not display an estimated price.</p></details></article>
+        </div>
+        <a class="button button-primary info-contact" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsApp">Contact us on WhatsApp</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand-lockup footer-brand" href="#home"><img src="images/brand/fchkal-store-logo.png" alt="" width="38" height="38"><span>FCHKAL <b>DIGITAL</b></span></a>
+      <div class="footer-contact"><a href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer">WhatsApp · +212 636 059 783</a><a href="https://www.instagram.com/fchkal_digital/" target="_blank" rel="noopener noreferrer">@fchkal_digital</a><span id="footerHours">11:00–00:00</span></div>
+      <p class="disclaimer" data-i18n="disclaimer">FCHKAL Store is an independent reseller, not affiliated with Rockstar Games, Take-Two or Sony Interactive Entertainment. All names and artwork belong to their owners.</p>
+      <small>© <span id="copyrightYear">2026</span> FCHKAL DIGITAL</small>
+    </div>
+  </footer>
+
+  <nav class="mobile-dock" aria-label="Quick navigation" data-i18n-aria-label="quickNavLabel">
+    <a href="#home" aria-label="Home" data-i18n-aria-label="gameHome"><span class="dock-icon">F</span><small data-i18n="dockHome">Home</small></a>
+    <a href="#catalog"><span class="dock-icon">⌂</span><small data-i18n="navGames">Games</small></a>
+    <button type="button" id="dockSearch" aria-label="Search" data-i18n-aria-label="dockSearch"><span class="dock-icon">⌕</span><small data-i18n="dockSearch">Search</small></button>
+    <button type="button" id="dockCart" aria-label="Cart" data-i18n-aria-label="dockCart"><span class="dock-icon">▱</span><small data-i18n="dockCart">Cart</small><i id="dockCartCount">0</i></button>
+    <a href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-i18n-aria-label="contactWhatsApp"><span class="dock-icon">↗</span><small>WhatsApp</small></a>
+  </nav>
+
+  <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+    <div class="dialog-sheet">
+      <header class="dialog-header"><div><p class="section-overline" data-i18n="cartOverline">YOUR ORDER</p><h2 id="cartTitle" data-i18n="cartTitle">Shopping cart</h2></div><button class="icon-button close-dialog" type="button" data-close-dialog="cartDialog" aria-label="Close cart" data-i18n-aria-label="close">×</button></header>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary"><span data-i18n="cartTotal">Total</span><strong id="cartTotal">0 DH</strong></div>
+      <a class="button button-primary cart-checkout" id="cartCheckout" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="cartWhatsApp">Continue on WhatsApp</a>
+    </div>
+  </dialog>
+
+  <dialog class="story-dialog" id="storyDialog" aria-label="GTA VI countdown" data-i18n-aria-label="storyLabel">
+    <button class="icon-button story-close" type="button" data-close-dialog="storyDialog" aria-label="Close" data-i18n-aria-label="close">×</button>
+    <img id="storyArt" src="images/gta6/hero.jpg" alt="" width="1280" height="720">
+    <div class="story-overlay"><p class="section-overline" data-i18n="storyLabel">FCHKAL DIGITAL · EVENT</p><h2>GTA VI</h2><p class="event-date" data-i18n="eventDate">19 NOVEMBER 2026 — PS5</p><div class="countdown story-countdown" id="storyCountdown"></div><a class="button button-primary" id="storyOrder" href="https://wa.me/212636059783" target="_blank" rel="noopener noreferrer" data-i18n="reserveGta">Reserve your copy on WhatsApp</a></div>
+  </dialog>
+
+  <dialog class="lightbox-dialog" id="reviewLightbox" aria-label="Customer photo" data-i18n-aria-label="reviewPhoto">
+    <button class="icon-button lightbox-close" type="button" data-close-dialog="reviewLightbox" aria-label="Close photo" data-i18n-aria-label="close">×</button>
+    <button class="icon-button lightbox-prev" type="button" data-review-step="-1" aria-label="Previous photo" data-i18n-aria-label="previousPhoto">‹</button>
+    <figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="icon-button lightbox-next" type="button" data-review-step="1" aria-label="Next photo" data-i18n-aria-label="nextPhoto">›</button>
+  </dialog>
+
+  <script type="application/json" id="imageVariants">{"007-first-light":{"srcset":"images/covers/007-first-light-480.webp 480w, images/covers/007-first-light-720.webp 720w, images/covers/007-first-light-900.webp 900w, images/covers/007-first-light-1440.webp 1440w","width":1440,"height":2160},"arc-raiders":{"srcset":"images/covers/arc-raiders-480.webp 480w, images/covers/arc-raiders-720.webp 720w, images/covers/arc-raiders-736.webp 736w","width":736,"height":981},"assassins-creed-black-flag-resynced":{"srcset":"images/covers/assassins-creed-black-flag-resynced-480.webp 480w, images/covers/assassins-creed-black-flag-resynced-720.webp 720w, images/covers/assassins-creed-black-flag-resynced-736.webp 736w","width":736,"height":981},"ghost-of-tsushima":{"srcset":"images/covers/ghost-of-tsushima-480.webp 480w, images/covers/ghost-of-tsushima-600.webp 600w","width":600,"height":900},"god-of-war-ragnarok":{"srcset":"images/covers/god-of-war-ragnarok-480.webp 480w, images/covers/god-of-war-ragnarok-720.webp 720w, images/covers/god-of-war-ragnarok-735.webp 735w","width":735,"height":1067},"resident-evil-4":{"srcset":"images/covers/resident-evil-4-480.webp 480w, images/covers/resident-evil-4-720.webp 720w, images/covers/resident-evil-4-900.webp 900w, images/covers/resident-evil-4-1080.webp 1080w","width":1080,"height":1080},"the-last-of-us-part-i":{"srcset":"images/covers/the-last-of-us-part-i-480.webp 480w, images/covers/the-last-of-us-part-i-720.webp 720w, images/covers/the-last-of-us-part-i-900.webp 900w, images/covers/the-last-of-us-part-i-1000.webp 1000w","width":1000,"height":1500},"the-last-of-us-part-ii":{"srcset":"images/covers/the-last-of-us-part-ii-480.webp 480w, images/covers/the-last-of-us-part-ii-720.webp 720w, images/covers/the-last-of-us-part-ii-736.webp 736w","width":736,"height":1104},"uncharted-4-lost-legacy-bundle":{"srcset":"images/covers/uncharted-4-lost-legacy-bundle-480.webp 480w, images/covers/uncharted-4-lost-legacy-bundle-720.webp 720w, images/covers/uncharted-4-lost-legacy-bundle-736.webp 736w","width":736,"height":1104},"ea-sports-fc-25":{"srcset":"images/covers/ea-sports-fc-25-480.webp 480w, images/covers/ea-sports-fc-25-720.webp 720w, images/covers/ea-sports-fc-25-900.webp 900w, images/covers/ea-sports-fc-25-1080.webp 1080w","width":1080,"height":1920},"ea-sports-fc-26":{"srcset":"images/covers/ea-sports-fc-26-480.webp 480w, images/covers/ea-sports-fc-26-720.webp 720w, images/covers/ea-sports-fc-26-736.webp 736w","width":736,"height":920},"ea-sports-fc-27-ultimate-edition":{"srcset":"images/covers/ea-sports-fc-27-ultimate-edition-480.webp 480w, images/covers/ea-sports-fc-27-ultimate-edition-720.webp 720w, images/covers/ea-sports-fc-27-ultimate-edition-736.webp 736w","width":736,"height":981},"ea-sports-fc-27":{"srcset":"images/covers/ea-sports-fc-27-480.webp 480w, images/covers/ea-sports-fc-27-720.webp 720w, images/covers/ea-sports-fc-27-736.webp 736w","width":736,"height":1308},"mafia-the-old-country":{"srcset":"images/covers/mafia-the-old-country-480.webp 480w, images/covers/mafia-the-old-country-600.webp 600w","width":600,"height":900},"marvels-wolverine":{"srcset":"images/covers/marvels-wolverine-480.webp 480w, images/covers/marvels-wolverine-720.webp 720w, images/covers/marvels-wolverine-764.webp 764w","width":764,"height":934},"marvels-spider-man-2":{"srcset":"images/covers/marvels-spider-man-2-480.webp 480w, images/covers/marvels-spider-man-2-720.webp 720w, images/covers/marvels-spider-man-2-736.webp 736w","width":736,"height":981},"forza-horizon-5":{"srcset":"images/covers/forza-horizon-5-480.webp 480w, images/covers/forza-horizon-5-600.webp 600w","width":600,"height":900},"nba-2k27-deluxe-edition":{"srcset":"images/covers/nba-2k27-deluxe-edition-480.webp 480w, images/covers/nba-2k27-deluxe-edition-720.webp 720w, images/covers/nba-2k27-deluxe-edition-736.webp 736w","width":736,"height":981},"nba-2k27-ps5-edition":{"srcset":"images/covers/nba-2k27-ps5-edition-480.webp 480w, images/covers/nba-2k27-ps5-edition-720.webp 720w, images/covers/nba-2k27-ps5-edition-736.webp 736w","width":736,"height":919},"ufc-6":{"srcset":"images/covers/ufc-6-362.webp 362w","width":362,"height":453},"wwe-2k25":{"srcset":"images/covers/wwe-2k25-480.webp 480w, images/covers/wwe-2k25-720.webp 720w, images/covers/wwe-2k25-736.webp 736w","width":736,"height":920},"wwe-2k26-standard-edition":{"srcset":"images/covers/wwe-2k26-standard-edition-425.webp 425w","width":425,"height":535},"playstation-plus-essential-3-months":{"srcset":"images/covers/playstation-plus-essential-3-months-181.webp 181w","width":181,"height":279},"playstation-plus-essential-12-months":{"srcset":"images/covers/playstation-plus-essential-12-months-480.webp 480w, images/covers/playstation-plus-essential-12-months-720.webp 720w, images/covers/playstation-plus-essential-12-months-736.webp 736w","width":736,"height":736},"gta-vi":{"srcset":"images/covers/gta-vi-480.webp 480w, images/covers/gta-vi-720.webp 720w, images/covers/gta-vi-736.webp 736w","width":736,"height":849},"gta-vi-g-gta-vi-ultimate":{"srcset":"images/covers/gta-vi-g-gta-vi-ultimate-480.webp 480w, images/covers/gta-vi-g-gta-vi-ultimate-720.webp 720w, images/covers/gta-vi-g-gta-vi-ultimate-900.webp 900w, images/covers/gta-vi-g-gta-vi-ultimate-1280.webp 1280w","width":1280,"height":720},"gta6Hero":{"srcset":"images/gta6/hero-480.webp 480w, images/gta6/hero-720.webp 720w, images/gta6/hero-900.webp 900w, images/gta6/hero-1280.webp 1280w","width":1280,"height":720},"reviews":{}}</script>
+  <script type="application/json" id="reviewsData">[]</script>
+  <script type="application/ld+json" id="storeStructuredData">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "FCHKAL DIGITAL",
+    "url": "https://fchkalstorex.netlify.app/",
+    "sameAs": ["https://www.instagram.com/fchkal_digital/"],
+    "telephone": "+212636059783",
+    "openingHours": "Mo-Su 11:00-00:00",
+    "currenciesAccepted": "MAD"
+  }
+  </script>
+</body>
+</html>
